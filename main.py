@@ -42,7 +42,7 @@ def main():
         for obj in asteroid:
             for shot_obj in shot:
                 if obj.collides(shot_obj):
-                    obj.kill()
+                    obj.split()
                     shot_obj.kill()
         for obj in asteroid:
             if player1.collides(obj):
